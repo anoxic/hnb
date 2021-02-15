@@ -424,8 +424,8 @@ void tree_free (Node *node)
 */
 void node_swap (Node *nodeA, Node *nodeB)
 {
-	Node *Aup, *Aleft, *Adown;
-	Node *Bup, *Bleft, *Bdown;
+	Node *Aup, *Aleft, *Aright, *Adown;
+	Node *Bup, *Bleft, *Bright, *Bdown;
 
 	if ((!nodeB) || (!nodeA))
 		return;
@@ -447,9 +447,11 @@ void node_swap (Node *nodeA, Node *nodeB)
 	Aup = node_up (nodeA);
 	Adown = node_down (nodeA);
 	Aleft = node_left (nodeA);
+	Aright = node_right (nodeA);
 	Bup = node_up (nodeB);
 	Bdown = node_down (nodeB);
 	Bleft = node_left (nodeB);
+	Bright = node_right (nodeB);
 
 	if ((nodeA->down == nodeB) && (nodeB->up == nodeA)) {	/* special case, neighbours */
 		if (Aup)

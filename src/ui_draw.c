@@ -207,12 +207,8 @@ static int draw_textblock (int line_start, int col_start, int width,
 							addstr ((char *) word);
 
 						}
-						if (data[dpos]) {
-							if (isspace(data[dpos]))
-								addch (' ');
-							else
-								addch (data[dpos]);
-						}
+						if (data[dpos])
+							addch (' ');
 					}
 				}
 
@@ -259,7 +255,7 @@ static int draw_textblock (int line_start, int col_start, int width,
 		} else {
 			ui_style (ui_style_selected);
 		}
-		addch(A_CHARTEXT & inch());
+		addch (data[cursor_pos]);
 		if (node_right (node)) {
 			ui_style (ui_style_parentnode);
 		} else {
