@@ -50,10 +50,10 @@
 			#\n\
 			#bullet_parent          \"  +\"\n\
 			#bullet_parent          \"  *\"\n\
-			#bullet_parent          \"  ·\"\n\
+			#bullet_parent          \"  \xb7\"\n\
 			#bullet_parent_expanded \"  *\"\n\
 			#bullet_parent_expanded \"  +\"\n\
-			#bullet_parent_expanded \"  ·\"\n\
+			#bullet_parent_expanded \"  \xb7\"\n\
 			#bullet_leaf            \"  -\"\n\
 			#bullet_leaf            \"  *\"\n\
 		\n\
@@ -148,7 +148,7 @@
 			#spell_command \"ispell -x\"\n\
 			#spell_command \"ispell -x -damerican\"\n\
 			#spell_command \"ispell -x -dbritish\"\n\
-			#spell_command \"ispell -x -dbokmål\"\n\
+			#spell_command \"ispell -x -dbokm\xE5l\"\n\
 			#spell_command \"ispell -x -dnynorsk\"\n\
 		spell_command \"ispell -x\"\n\
 		\n\
@@ -642,14 +642,14 @@
 		bind any \"unbound\"\n\
 		\n\
 	context user_ispell\n\
-		helptext \"Language for ispell: | |F1| Br.english  |F2| Am.english  |F3| Norwegian bokmål  |F4| Norwegian nynorsk\"\n\
+		helptext \"Language for ispell: | |F1| Br.english  |F2| Am.english  |F3| Norwegian bokm\xE5l  |F4| Norwegian nynorsk\"\n\
 		bind f1  'spell_command \"ispell -x -damerican\"'\n\
 		bind ..  'context main'\n\
 		\n\
 		bind f2  'spell_command \"ispell -x -dbritish\"'\n\
 		bind ..  'context main'\n\
 		\n\
-		bind f3  'spell_command \"ispell -x -dbokmål\"'\n\
+		bind f3  'spell_command \"ispell -x -dbokm\xE5l\"'\n\
 		bind ..  'context main'\n\
 		\n\
 		bind f4  'spell_command \"ispell -x -dnynorsk\"'\n\
@@ -746,7 +746,7 @@
 	context main\n\
 	macro define m_about\n\
 		status \"hnb - hierarchical notebook   http://hnb.sourceforge.net/\"\n\
-		status \"(c) Øyvind Kolås 2001-2003    pippin@users.sourceforge.net\"\n\
+		status \"(c) \xD8yvind Kol\xE5s 2001-2003    pippin@users.sourceforge.net\"\n\
 		status \"(this is lhnb, hnb's continuation by Tomas Janousek)\"\n\
 		end\n\
 	\n\
