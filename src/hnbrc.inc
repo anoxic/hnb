@@ -50,10 +50,10 @@
 			#\n\
 			#bullet_parent          \"  +\"\n\
 			#bullet_parent          \"  *\"\n\
-			#bullet_parent          \"  \xb7\"\n\
+			#bullet_parent          \"  \xB7\"\n\
 			#bullet_parent_expanded \"  *\"\n\
 			#bullet_parent_expanded \"  +\"\n\
-			#bullet_parent_expanded \"  \xb7\"\n\
+			#bullet_parent_expanded \"  \xB7\"\n\
 			#bullet_leaf            \"  -\"\n\
 			#bullet_leaf            \"  *\"\n\
 		\n\
@@ -746,7 +746,7 @@
 	context main\n\
 	macro define m_about\n\
 		status \"hnb - hierarchical notebook   http://hnb.sourceforge.net/\"\n\
-		status \"(c) \xD8yvind Kol\xE5s 2001-2003    pippin@users.sourceforge.net\"\n\
+		status \"(c) ""\xD8""yvind Kol""\xE5""s 2001-2003    pippin@users.sourceforge.net\"\n\
 		status \"(this is lhnb, hnb's continuation by Tomas Janousek)\"\n\
 		end\n\
 	\n\
