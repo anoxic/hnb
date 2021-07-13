@@ -304,7 +304,7 @@ static int draw_spacing (int line, int col, int width, Node *node,
 	return width;
 }
 
-static char bullet_leaf[4] = "  ·";
+static char bullet_leaf[4] = "  \xB7";
 static char bullet_parent[4] = "  +";
 static char bullet_parent_expanded[4] = "  -";
 static char bullet_todo_leaf_undone[4] = "[ ]";
