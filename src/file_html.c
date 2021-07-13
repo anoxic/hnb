@@ -37,16 +37,17 @@
 /* *INDENT-OFF* */
 
 static char *htmlquote[]={
-	"&", "&amp;",
-	"\"", "&#39;",
-	"<", "&lt;",
-	">", "&gt;",
-	"ø", "&oslash;",
-	"Ø", "&Oslash;",
-	"å", "&aring;",
-	"Å", "&Aring;",
-	"æ", "&aelig;",
-	"Æ", "&AElig;",NULL
+	"&",	"&amp;",
+	"\"",   "&#39;",
+	"<",	"&lt;",
+	">",	"&gt;",
+	"\xF8",	"&oslash;",
+	"\xD8",	"&Oslash;",
+	"\xE5",	"&aring;",
+	"\xC5",	"&Aring;",
+	"\xE6",	"&aelig;",
+	"\xC6",	"&AElig;",
+	NULL
 };
 
 /* *INDENT-ON* */
