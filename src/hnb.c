@@ -52,31 +52,39 @@ static void usage (const char *av0)
 	fprintf (stderr,
 			 "\nusage: %s [database] [options] [command [command] ..]\n",
 			 av0);
-	fprintf (stderr, "\n\
-Hierarchical NoteBook by Øyvind Kolås <pippin@users.sourceforge.net>\n\
-(this is lhnb, hnb's continuation by Tomas Janousek)\n\
-It is distributed under the GNU General Public License\n\
-\n\
-default database: '%s'\n", prefs.default_db_file);
-	fprintf (stderr, "\n\
-Options:\n\
-\n\
-\t-h --help     this message\n\
-\t-v --version  prints the version\n\
-\t-t --tutorial loads the tutorial instead of a database\n\
-\n\
-\t-a --ascii    load ascii ascii\n\
-\t   --hnb      load hnb DTD\n\
-\t-o --opml     load OPML DTD\n\
-\t-x --xml      load general xml\n");
+	fprintf (stderr,
+		"\n"
+		"Hierarchical NoteBook by\n"
+		"\xD8yvind Kol\E5s <pippin@users.sourceforge.net>\n"
+		"Tom\xC3\xA1\xC5\xA1 Janou""\xC5\xA1""ek <tomi@nomi.cz>\n"
+		"Brian Zick <brian@zick.io>\n"
+		"It is distributed under the GNU General Public License\n"
+		"\n"
+		"default database: '%s'\n",
+		prefs.default_db_file
+	);
+	fprintf (stderr,
+		"\n"
+		"Options:\n"
+		"\n"
+		"\t-h --help     this message\n"
+		"\t-v --version  prints the version\n"
+		"\t-t --tutorial loads the tutorial instead of a database\n"
+		"\n"
+		"\t-a --ascii    load ascii ascii\n"
+		"\t   --hnb      load hnb DTD\n"
+		"\t-o --opml     load OPML DTD\n"
+		"\t-x --xml      load general xml\n"
+	);
 #ifdef USE_LIBXML
 	fprintf (stderr, "\t-s --stylized load stylized xml (using libxml2)\n");
 #endif
-	fprintf (stderr, "\n\
-\t-rc <file>        specify other config file\n\
-\t-ui <interface>   interface to use, ( curses(default) or cli)\n\
-\t-e                execute commands\n\
-\n\n");
+	fprintf (stderr, "\n"
+		"\t-rc <file>        specify other config file\n"
+		"\t-ui <interface>   interface to use, ( curses(default) or cli)\n"
+		"\t-e                execute commands\n"
+		"\n\n"
+	);
 }
 
 void init_subsystems ();
